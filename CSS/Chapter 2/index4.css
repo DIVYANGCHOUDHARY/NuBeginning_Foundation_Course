@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 334px;
+    height: 1344px;
+    color: white;
+    border: 2px solid red;
+    /* background Shorthand property */
+    /* background: color url('img') repeat attachment position; */
+    background: red url('img.png') scroll;
+}

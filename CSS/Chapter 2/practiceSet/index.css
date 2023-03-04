@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: darkblue;
+    color: white;
+}
+
+.container ul{
+    display: flex;
+    list-style: none;
+    padding: 10px 100px;
+    justify-content: center;
+}
+
+.main{
+    color: darkred;
+}
+
+.bg{
+    width: 344px;
+    height: 344px;
+    background-color: rgb(18, 63, 63);
+    background-image: url('img.png');
+}
