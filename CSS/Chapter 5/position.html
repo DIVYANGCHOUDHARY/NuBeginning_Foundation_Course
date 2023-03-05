@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in HTML</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            display: inline;
+        }
+        header{
+            height: 70px;
+            color: white;
+            background-color: black;
+        }
+        .container{
+            width: 50vh;
+            height: 50vw;
+            margin: auto;
+            background-color: aqua;
+        }
+        p{
+            border: 2px solid red;
+            text-align: center;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            position: relative;
+            background-color: chartreuse;
+        }
+        .box1{
+            height: 200px;
+            width: 200px;
+            /* position: relative; */
+            background-color: rgb(174, 146, 222);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam voluptate, harum, accusamus quae veritatis praesentium repudiandae facilis sapiente vitae ducimus ea, nesciunt reiciendis amet eos esse provident excepturi. Ducimus, aliquam.</p>
+        <div class="box">I am a box</div>
+        <div class="box1">I am second box</div>
+    </div>
+</body>
+</html>
