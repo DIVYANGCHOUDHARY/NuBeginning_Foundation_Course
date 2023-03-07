@@ -143,3 +143,74 @@ console.log("Using forEach loop")
 arr.forEach(function(element){
     console.log(element)
 })
+
+console.log("Using While loop")
+let j=0;
+while(j<arr.length){
+    console.log(arr[j]);
+    j++;
+}
+
+console.log("Using do while loop");
+do{
+    console.log(arr[j]);
+    j++;
+}while(j<arr.length);
+
+// Use of break and continue
+var a= [1,2,3,4,5,6,7,8];
+console.log("Using break")
+for(var i=0; i<a.length; i++){
+    if(i==2) break;
+    console.log(a[i])
+}
+
+console.log("Using break")
+for(var i=0; i<a.length; i++){
+    if(i==2) continue;
+    console.log(a[i])
+}
+
+// Array methods
+let myArr= ["Fan","Camera",34,null,true];
+console.log(myArr)
+console.log(myArr.length)
+myArr.pop();
+console.log(myArr)
+myArr.push("Divyang Choudhary")
+console.log(myArr)
+
+// shift() removes the first element from the list/array
+myArr.shift()
+console.log(myArr);
+
+// unshift() adds from the first element in the list/array
+myArr.unshift("Divyang Choudhary")
+console.log(myArr);
+
+// The below syntax returns the new length of the array
+console.log(myArr.unshift("dc"));
+
+const newLen= myArr.unshift("itsdc");
+console.log(newLen);
+
+console.log(myArr.toString());
+
+d= [1, 4, 6, 43, 23, 32324]
+console.log(d.sort())
+
+// String Methods in Js
+let myLovelyString= "DC is a good boy achcha good";
+console.log(myLovelyString.length)
+console.log(myLovelyString.indexOf("good"))
+console.log(myLovelyString.lastIndexOf("good"))
+
+// Slicing  
+console.log(myLovelyString.slice(1,4))
+
+d= myLovelyString.replace("DC", "Divyang Choudhary")
+console.log(d, myLovelyString)
+console.log(d)
+
+let myDate= new Date();
+console.log(myDate)
