@@ -280,3 +280,44 @@ firstContainer.addEventListener('mouseup', function(){
 firstContainer.addEventListener('mousedown', function(){
     console.log("Mouse down when clicked on container")
 })
+
+firstContainer.addEventListener('click', function(){
+    document.querySelectorAll('.container')[1].innerHTML= "<b>We have clicked</b>"
+    console.log("Clicked on Container")
+})
+
+let prevHTML= document.querySelectorAll('.container')[1].innerHTML;
+firstContainer.addEventListener('mouseup', function(){
+    document.querySelectorAll('.container')[1].innerHTML= prevHTML;
+    console.log("Mouse up when clicked on container");
+})
+
+firstContainer.addEventListener('mousedown', function(){
+    document.querySelectorAll('.container')[1].innerHTML= "<b>We have clicked</b>"
+    console.log("Mouse down when clicked on container");
+})
+
+// Normal function
+function sum(a, b){
+    return a+b;
+}
+
+// Arrow function
+sum= (a, b)=>{
+    return a+b;
+}
+
+// SetTimeout and SetInterval
+logkaro=()=>{
+    document.querySelectorAll('.container')[1].innerHTML= "<b>Set interval fired</b>"
+    console.log("I am your log")
+}
+
+clr= setTimeout(logkaro, 2000);
+
+// The below syntax will display after every 2seconds
+clr= setInterval(logkaro, 2000)
+
+// clearInterval(clr) & clearTimeout(clr) are used to cancel setInterval & setTimeout
+
+// Local Storage
