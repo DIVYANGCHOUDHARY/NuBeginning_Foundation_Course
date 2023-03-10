@@ -221,4 +221,62 @@ console.log(myDate.getMinutes());
 console.log(myDate.getHours());
 
 // DOM Manipulation
-document
+let elem= document.getElementById('click');
+console.log(elem);
+
+let elemClass= document.getElementsByClassName("container");
+console.log(elemClass);
+// elemClass[0].style.background= "yellow"
+elemClass[0].classList.add("bg-primary");
+elemClass[0].classList.add("text-success")
+
+console.log(elemClass[0].innerHTML);
+console.log(elemClass[0].innerText);
+
+tn= document.getElementsByTagName('button')
+console.log(tn);
+createdElement= document.createElement('p');
+createdElement.innerText= "This is a created para";
+tn[0].appendChild(createdElement)
+
+createdElement1= document.createElement('b');
+createdElement1.innerText= "This is a created bold";
+tn[0].replaceChild(createdElement1, createdElement);
+
+// removeChild(element); ----> removes an elements
+
+//Selecting using Query
+sel= document.querySelector('.container')
+console.log(sel)
+
+sel= document.querySelectorAll('.container')
+console.log(sel)
+
+function clicked(){
+    console.log('The button was clicked');
+}
+
+window.onload= function(){
+    console.log('The document was loaded')
+}
+
+// Events in Js
+firstContainer.addEventListener('click',function(){
+    console.log("clicked on container")
+})
+
+firstContainer.addEventListener('mouseover', function(){
+    console.log("Mouse on Container")
+})
+
+firstContainer.addEventListener('mouseout', function(){
+    console.log("Mouse out of container")
+})
+
+firstContainer.addEventListener('mouseup', function(){
+    console.log("Mouse up when clicked on Container")
+})
+
+firstContainer.addEventListener('mousedown', function(){
+    console.log("Mouse down when clicked on container")
+})
