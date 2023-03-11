@@ -320,4 +320,7 @@ clr= setInterval(logkaro, 2000)
 
 // clearInterval(clr) & clearTimeout(clr) are used to cancel setInterval & setTimeout
 
-// Local Storage
+//JavaScript Local Storage
+localStorage.setItem('name','harry')
+localStorage
+localStorage.getItem('name')
