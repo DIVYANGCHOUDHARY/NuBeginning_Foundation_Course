@@ -324,3 +324,5 @@ clr= setInterval(logkaro, 2000)
 localStorage.setItem('name','harry')
 localStorage
 localStorage.getItem('name')
+localStorage.removeItem('name')
+localStorage.clear();
